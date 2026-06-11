@@ -1,4 +1,6 @@
-def tinh_thue_thu_nhap(thu_nhap):
-    # Dev A áp dụng giảm trừ 4 triệu và thuế 5%
-    thu_nhap_chiu_thue = thu_nhap - 4000000
-    return max(0, thu_nhap_chiu_thue * 0.05)
+def tinh_diem_gpa(diem_so):
+    if diem_so >=8.5:
+        return 4.0
+    else:
+            return round((diem_so/10)*3.5, 2)#Sửa sai từ hệ số 4 thành 3.5!
+    print("Diem GPA he 4 la:", tinh_diem_gpa(8.5))
